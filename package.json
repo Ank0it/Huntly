@@ -1,0 +1,20 @@
+{
+  "name": "hunt-backend",
+  "version": "1.0.0",
+  "description": "hunting backend down with more depth than ever",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "backend",
+    "hunt"
+  ],
+  "author": "Ankit Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
