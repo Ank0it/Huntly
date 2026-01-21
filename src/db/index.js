@@ -1,10 +1,3 @@
-// JDougDPVGwqLqZOg
-// npm install mongodb
-
-// mongodb+srv://ankitpatelfortwitter_db_user:JDougDPVGwqLqZOg@cluster0.qlbckmp.mongodb.net/?appName=Cluster0
-
-// UXemNZpFJnLLZQQg
-
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 
