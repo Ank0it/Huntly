@@ -47,7 +47,7 @@ const registerUser = asyncHandler(async (req, res) => {
     const avatar = await uploadOnCloudinary(avatarLocalPath);
     const coverImage = await uploadOnCloudinary(coverImageLocalPath);
 
-     if(!avatarUrl){
+     if(!avatar){
         throw new ApiError(500,"Unable to upload avatar image, please try again later")
      }
     
@@ -73,7 +73,7 @@ const registerUser = asyncHandler(async (req, res) => {
     return res.status(201).json(
         new ApiResponse(201, createdUser,"User registered successfully")
     )
-    
+
 })
 
 export { 
