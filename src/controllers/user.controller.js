@@ -1,7 +1,7 @@
 import {asyncHandler} from "../utils/asyncHandler.js";
 import {ApiError} from "../utils/apiError.js";
 import {User} from "../models/user.model.js";
-import { uploadOnCloudinary } from "../utils/cloudinary.js";
+import { uploadOnCloudinary , deleteFromCloudinary, getPublicIdFromURL } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";  
@@ -279,6 +279,13 @@ const updateUserAvatar = await asyncHandler(async (req, res) =>{
     }
     
      // TODO: delete previous avatar from cloudinary
+    const previousAvatarUrl = req.user?.avatar;
+
+    if (previousAvatarUrl) {
+        const publicId = getPublicIdFromUrl(previousAvatarUrl);
+        await deleteFromCloudinary(publicId);
+    }
+
 
     const avatar = await uploadOnCloudinary(avatarLocalPath);
 
