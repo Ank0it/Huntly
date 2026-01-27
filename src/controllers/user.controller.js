@@ -1,7 +1,7 @@
 import {asyncHandler} from "../utils/asyncHandler.js";
 import {ApiError} from "../utils/apiError.js";
 import {User} from "../models/user.model.js";
-import { uploadOnCloudinary , deleteFromCloudinary, getPublicIdFromURL } from "../utils/cloudinary.js";
+import { uploadOnCloudinary , deleteFromCloudinary, getPublicIdFromUrl } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";  
