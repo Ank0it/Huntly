@@ -1,10 +1,10 @@
-# Hunt-Backend
+# Huntly
 
 Backend for a minimal video-sharing platform focused on discovery, privacy, and intentional design.
 
 This repository is more than a set of routes and models — it's a conversation about how we build social products responsibly. The code here powers user registration, authentication, avatar/cover uploads (Cloudinary), and simple video references. Read on for quick setup, architecture notes, and a few design questions worth debating before scaling.
 
-**Why this exists**: Modern content platforms optimize for growth; `Hunt-Backend` explores a different axis — clarity of ownership, lightweight primitives, and choices that make privacy and predictability easier to reason about.
+**Why this exists**: Modern content platforms optimize for growth; `Huntly` explores a different axis — clarity of ownership, lightweight primitives, and choices that make privacy and predictability easier to reason about.
 
 ---
 
