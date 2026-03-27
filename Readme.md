@@ -1,4 +1,4 @@
-# Huntly
+# Clario
 
 Backend for a minimal video-sharing platform focused on discovery, privacy, and intentional design.
 
