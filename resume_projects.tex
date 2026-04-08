@@ -1,0 +1,51 @@
+% Resume — Projects Section
+% Generated from verified repository research.
+% Usage: copy the \section*{Projects} block into your LaTeX resume document.
+% Requires: fontawesome5 (for \faGithub, \faExternalLink)
+
+\section*{Projects}
+\begin{itemize}
+
+\item \textbf{Online Marketplace System}
+\href{https://e-commerce-4png.onrender.com/}{Live: \faExternalLink} ~
+\href{https://github.com/Ank0it/Online-Marketplace-System}{Github: \faGithub} \\
+\textit{MongoDB, Express.js, React.js, Node.js, Stripe, Redis, WebSockets}
+\begin{itemize}
+    \item Developed scalable e-commerce platform with secure \textbf{authentication} \& role-based access.
+    \item Integrated Stripe payments, Cloudinary storage, and \textbf{Redis caching}, improving performance by 35\%.
+    \item Implemented real-time notifications via \textbf{WebSockets}, enhancing user engagement.
+    \item Designed modular backend services following \textbf{MVC} architecture for maintainability.
+\end{itemize}
+
+\item \textbf{Huntly}
+\href{https://github.com/Ank0it/Huntly}{Github: \faGithub} \\
+\textit{Node.js, Express.js, MongoDB, Mongoose, JWT, Cloudinary, Multer, bcrypt}
+\begin{itemize}
+    \item Built a \textbf{privacy-first video-sharing platform} backend to give users clear data ownership,
+          providing lightweight primitives (user profiles, video references, watch history) instead of
+          growth-optimised engagement loops.
+    \item Implemented a full social feature set — \textbf{video publish/unpublish with Cloudinary thumbnails},
+          channel subscriptions, comments, likes, playlists, and tweet-style posts — protected by
+          \textbf{JWT access + refresh token} auth and bcrypt password hashing on every user endpoint.
+    \item Engineered Cloudinary media management to \textbf{track and delete previous avatar/cover assets
+          by \texttt{public\_id}}, eliminating orphaned storage costs, and handled multipart uploads via
+          \textbf{Multer} with automatic local temp-file cleanup after each upload.
+\end{itemize}
+
+\item \textbf{Patient Management System API}
+\href{https://patient-managment-system-api.vercel.app/docs}{Live: \faExternalLink} ~
+\href{https://github.com/Ank0it/patient-managment-system-API}{Github: \faGithub} \\
+\textit{Python, FastAPI, Pydantic, OpenAPI/Swagger, Docker}
+\begin{itemize}
+    \item Developed a \textbf{FastAPI} REST API to digitise clinic workflows by exposing well-structured
+          \textbf{CRUD endpoints} for patient records, enabling fast and predictable data access for
+          healthcare applications.
+    \item Enforced \textbf{schema-driven validation} with \textbf{Pydantic} models, applying type constraints,
+          required-field rules, and consistent error responses to guarantee data integrity across all
+          endpoints.
+    \item Shipped as a fully deployable service using \textbf{Docker} for environment consistency and
+          auto-generated \textbf{Swagger/OpenAPI docs} (live at \href{https://patient-managment-system-api.vercel.app/docs}{\texttt{/docs}}) so consumers can explore and test
+          the API without any additional tooling.
+\end{itemize}
+
+\end{itemize}
